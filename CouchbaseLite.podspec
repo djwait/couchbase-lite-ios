@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.couchbase.com/communities/couchbase-lite'
   s.social_media_url = 'https://twitter.com/couchbase'
   s.authors  = { 'Jens Alfke' => 'jens@couchbase.com' }
-  s.source   = { :git => 'https://github.com/djwait/couchbase-lite-ios.git', :branch => "release/1.0.1", :submodules => true }
+  s.source   = { :git => 'https://github.com/djwait/couchbase-lite-ios.git', :tag => 'release/1.0.1', :submodules => true }
   s.requires_arc = false
 
   s.ios.deployment_target = '6.0'
@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'archive/CouchbaseLite.xcarchive/Products/Library/Frameworks/CouchbaseLite.framework','LICENSE'
   s.vendored_frameworks = 'archive/CouchbaseLite.xcarchive/Products/Library/Frameworks/CouchbaseLite.framework'
   
-  s.public_header_files = '**/*.h'
+  s.public_header_files = 'Source/API/*.h'
+  s.source_files = 'Source/API/CouchbaseLite.h'
   s.frameworks = 'SystemConfiguration', 'CFNetwork', 'Security'
   s.libraries = 'sqlite3', 'z'
   
