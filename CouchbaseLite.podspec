@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.couchbase.com/communities/couchbase-lite'
   s.social_media_url = 'https://twitter.com/couchbase'
   s.authors  = { 'Jens Alfke' => 'jens@couchbase.com' }
-  s.source   = { :git => 'https://github.com/djwait/couchbase-lite-ios.git', :tag => 'release/1.0.1', :submodules => true }
+  s.source   = { :git => 'https://github.com/djwait/couchbase-lite-ios.git', :branch => 'release/1.0.1', :submodules => true }
   s.requires_arc = false
 
   s.ios.deployment_target = '6.0'
