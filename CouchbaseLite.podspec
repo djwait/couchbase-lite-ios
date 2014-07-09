@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'archive/CouchbaseLite.xcarchive/Products/Library/Frameworks/CouchbaseLite.framework'
   
   s.public_header_files = 'Source/API/*.h'
+  s.private_header_files = 'Source/*.h'
   s.source_files = 'Source/API/CouchbaseLite.h'
   s.frameworks = 'SystemConfiguration', 'CFNetwork', 'Security'
   s.libraries = 'sqlite3', 'z'
